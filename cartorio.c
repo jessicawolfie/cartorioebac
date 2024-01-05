@@ -125,9 +125,20 @@ int main ()
 {
     int opcao=0; //definindo as variáveis
     int laco=1;
+    char senhadigitada[]="a";
+    int comparacao;
 
-    for (laco=1;laco=1;)
-    { 
+    printf("### Cartório da EBAC ###\n\n");
+    printf("Login de administrador.\n\nDigite a sua senha: ");
+    scanf("%s", senhadigitada);  
+
+    comparacao = strcmp(senhadigitada, "broccoli");  
+    if(comparacao == 0)
+    {
+
+      system ("clear");
+      for (laco=1;laco=1;)
+      { 
 
        system("clear");
  
@@ -170,6 +181,10 @@ int main ()
           break;
        } //fim da seleção do menu
 
-   }    
+      }   
+    }
+
+else
+   printf("Senha incorreta!"); 
 
 }
